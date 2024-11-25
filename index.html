@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Register Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <form class="box-login" id="login">
+                <div class="top-header">
+                    <h3>Hello, Again</h3>
+                    <small>We are happy to have you back.</small>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="email" id="logEmail" class="input-box" required>
+                        <label for="logEmail">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="logPassword" class="input-box" required>
+                        <label for="logPassword">Password</label>
+                        <div class="eye-area">
+                            <div class="eye-box" onclick="myLogPassword()">
+                                <i class="fa-solid fa-eye" id="eye"></i>
+                                <i class="fa-solid fa-eye-low-vision" id="eye-slash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="formCheck" class="check">
+                        <label for="formCheck">Remember Me</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="Log In" class="input-submit">
+                    </div>
+                    <div class="forgot"><a href="#">Forgot password?</a></div>
+                </div>
+            </form>
+
+            <form class="box-register" id="register">
+                <div class="top-header">
+                    <h3>Register, Now</h3>
+                    <small>We are happy to have you with us.</small>
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="text" id="regUser" class="input-box" required>
+                        <label for="regUser">User Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="regEmail" class="input-box" required>
+                        <label for="regEmail">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="regPassword" class="input-box" required>
+                        <label for="regPassword">Password</label>
+                        <div class="eye-area">
+                            <div class="eye-box" onclick="myRegPassword()">
+                                <i class="fa-solid fa-eye" id="eye-2"></i>
+                                <i class="fa-solid fa-eye-low-vision" id="eye-slash-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="remember">
+                        <input type="checkbox" id="formCheck-2" class="check">
+                        <label for="formCheck-2">I agree to the terms & conditions</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" value="Register" class="input-submit">
+                    </div>
+                </div>
+            </form>
+
+            <div class="switch">
+                <a href="#" class="login" onclick="login()">Login</a>
+                <a href="#" class="register" onclick="register()">Register</a>
+                <div class="btn-active" id="btn"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
